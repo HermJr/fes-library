@@ -12,12 +12,16 @@ nav {
 }
 
 img {
-  width: 100;
+  width: 100%;
+}
+
+p {
+  line-height: 1.5;
 }
 
 .nav__container {
   width: 100%;
-  max-width: 1200;
+  max-width: 1200px;
   padding: 0 24px;
   display: flex;
   justify-content: space-between;
@@ -46,24 +50,25 @@ li {
   text-decoration: none;
   font-size: 20px;
   color: #7342d6;
+  font-weight: bold;
   padding: 8px;
 }  
 
-.nav__link:hoover {
+.nav__link:hover { 
   text-decoration: underline;
-}
+}  
  
 .nav__link--primary {
   border: 2px solid #7342d6;
   border-radius: 4px;
 }
 
-.nav__link--primary:hoover {
+.nav__link--primary:hover {
   text-decoration: none;
 }
 
 #landing {
-  color: rgba(115, 66, 214, 0.1);
+  background-color:  rgba(115, 66, 214, 0.1);
 }
 
 header {
@@ -77,7 +82,7 @@ header {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
 .header__description {
@@ -86,7 +91,7 @@ header {
   align-items: center;
 }
 
-hi {
+h1 {
   font-size: 56px;
   color:#7342d6;
   margin-bottom: 24px;
@@ -94,9 +99,10 @@ hi {
 }  
 
 h2 {
-  font-size: 32px;
-  margin-bottom: 32px;
   text-align: center;
+  font-size: 32px;
+   margin-bottom: 32px;
+   text-align: center;
 }
 
 button {
@@ -104,7 +110,7 @@ button {
 }
 
 button:active {
-  transform: translate(1px);
+  transform: translateY(1px);
 }
 
 .btn {
@@ -114,4 +120,64 @@ button:active {
   font-size: 20px;
   border-radius: 4px;
   border: none;
+}
+
+.header__img--wrapper {
+  padding: 20px;
+}
+
+.header__img--wrapper img {
+  max-height: 50vh;
+  object-fit: contain;
+}
+
+.container {
+  padding: 56px 0;
+}
+R
+.row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*
+
+HIGHLIGHTS
+
+*/
+
+.highlight__wrapper {
+  display: flex;
+}
+
+.highlight {
+  padding: 0 24px;
+  width: calc(100% / 3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.highlight__para {
+  text-align: center;
+}
+
+.highlight__img {
+  border: 2px solid #7342d65d;
+  color: #7342d6;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px; 
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.highlight__subtitle {
+  font-size: 20px;
+  margin-bottom: 16px;
 }
