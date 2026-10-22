@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -101,8 +101,8 @@ h1 {
 h2 {
   text-align: center;
   font-size: 32px;
-   margin-bottom: 32px;
-   text-align: center;
+  margin-bottom: 32px;
+  text-align: center;
 }
 
 button {
@@ -124,6 +124,8 @@ button:active {
 
 .header__img--wrapper {
   padding: 20px;
+  margin-top: 24px;
+  z-index: 2;
 }
 
 .header__img--wrapper img {
@@ -134,7 +136,7 @@ button:active {
 .container {
   padding: 56px 0;
 }
-R
+
 .row {
   width: 100%;
   max-width: 1200px;
@@ -146,6 +148,53 @@ R
 HIGHLIGHTS
 
 */
+
+#highlights {
+  position: relative;
+}
+
+#highlights:before {
+  /* background: url(assets/wave.svg);
+  content: "";
+  positive: absolute;
+  top: 1px;
+  left: 0;
+  transform; translateY(*100%);
+  width: 101vw;
+  height: 12vw;
+  background-size: cover;
+  background-repeat: no reeat; 
+  z-index: 1; */
+}
+
+#highlights:before {
+  background: url('assets/wave.svg');
+  content: "";
+  position:absolute;
+  width: 101vw;
+  height: 12vw;
+  top: 1px;
+  left: 0;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: translateY(-100%);
+}
+
+#highlights::after { 
+  background: url('assets/wave.svg');
+  content: "";
+  position:absolute;
+  width: 101vw;
+  height: 12vw;
+  top: 1px;
+  left: 0;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: translateY(100%); 
+  rotate(180 deg);
+}
 
 .highlight__wrapper {
   display: flex;
@@ -162,6 +211,7 @@ HIGHLIGHTS
 
 .highlight__para {
   text-align: center;
+  max-width: 200px;
 }
 
 .highlight__img {
@@ -180,4 +230,15 @@ HIGHLIGHTS
 .highlight__subtitle {
   font-size: 20px;
   margin-bottom: 16px;
+}
+
+/*
+
+FEATURES
+
+*/
+
+#features {
+  height: 1000px;
+  background-color: rgba(115, 66, 214, 0.1);
 }
